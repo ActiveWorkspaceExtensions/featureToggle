@@ -11,18 +11,15 @@ custom Active Workspace client kit which contains the following modules:
 Active Workspace 4.3
 
 ## Build
-- Create a new folder under `stage/src`, called `featureToggle`.
-- Download the contents of this repository to the new folder
+- Download reop
+- Copy featureToggle folder to `stage/src` directory in your Active Workspace installation root
 - Use `awbuild` to build and publish to the file repo.
 
 ## Usage
-After building and publishing the code, the feature is disabled by default. Log into AWC and you should see no changes to the global navigation bar on the left hand side of the home page.
+After building and publishing the code, the features are disabled by default. You can enable/disable the features by setting the appropriate preference values to true/false in the featureToggle_prefs.xml file and importing into Teamcenter
 
-    screenshot here
 
- You must enable the feature by defining the appropriate Teamcenter preference and setting the value to 'true'.
-
-### <b>Creating Teamcenter preference</b>
+#### commandToggle
 Import featureToggle_pref.xml file using the following command:
 
     preferences_manager -u=infodba -p=infodba -g=dba -mode=import -scope=SITE -file=featureToggle_pref.xml -action=override
