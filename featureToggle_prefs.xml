@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<preferences version="10.0">
+  <category name="Feature Toggles">
+    <category_description>No description available for this category.</category_description>
+    <preference name="FT_commandToggle_is_feature_enabled" type="Logical" array="false" disabled="false" protectionScope="Site" envEnabled="true">
+      <preference_description>Enables/Disables commandToggle module in Active Workspace Client featureToggle kit.
+Valid values for this ite preference are &apos;true&apos; or &apos;false&apos;</preference_description>
+      <context name="Teamcenter">
+        <value>true</value>
+      </context>
+    </preference>
+  </category>
+</preferences>
