@@ -1,15 +1,21 @@
-# featureToggle
-Demonstrate toggling AWC features through Teamcenter preferences
+# Overview
+This repo is intended to demonstrate toggling AWC features through Teamcenter preferences. The featureToggle kit is a
+custom Active Workspace client kit which contains the following modules:
 
-## version
+##
+* **Module**: commandToggle
+* **Description**: toggles visibility of a command based on Teamcenter preference
+##
+
+## Version
 Active Workspace 4.3
 
-## build
+## Build
 - Create a new folder under `stage/src`, called `featureToggle`.
 - Download the contents of this repository to the new folder
 - Use `awbuild` to build and publish to the file repo.
 
-## usage
+## Usage
 After building and publishing the code, the feature is disabled by default. Log into AWC and you should see no changes to the global navigation bar on the left hand side of the home page.
 
     screenshot here
