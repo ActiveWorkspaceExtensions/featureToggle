@@ -32,6 +32,7 @@ After building and publishing the code, the features are disabled by default. Yo
         preferences_manager -u=infodba -p=infodba -g=dba -mode=import -scope=SITE -file=awc_startup_prefs.xml -action=merge
 
 * Check to see commandToggle custom command enabled on the global navigation bar of the home page (thumbs up icon)
+
 ![screenshot](/screenshots/commandToggle_enabled.png)
 
 
