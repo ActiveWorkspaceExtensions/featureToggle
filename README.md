@@ -25,11 +25,11 @@ After building and publishing the code, the features are disabled by default. Yo
 
 * Import **featureToggle_prefs.xml** file using the following command:
 
-    preferences_manager -u=infodba -p=infodba -g=dba -mode=import -scope=SITE -file=featureToggle_prefs.xml -action=override
+        preferences_manager -u=infodba -p=infodba -g=dba -mode=import -scope=SITE -file=featureToggle_prefs.xml -action=override
 
 * Add to *AWC_StartupPreferences* by importing the **awc_startup_prefs.xml** file using the following command:
 
-    preferences_manager -u=infodba -p=infodba -g=dba -mode=import -scope=SITE -file=awc_startup_prefs.xml -action=merge
+        preferences_manager -u=infodba -p=infodba -g=dba -mode=import -scope=SITE -file=awc_startup_prefs.xml -action=merge
 
 * Check to see commandToggle custom command enabled on the global navigation bar of the home page (thumbs up icon)
 ![screenshot](/screenshots/commandToggle_enabled.png)
