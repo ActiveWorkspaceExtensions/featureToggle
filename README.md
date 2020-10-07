@@ -32,8 +32,8 @@ Add to *AWC_StartupPreferences* by importing the **awc_startup_prefs.xml** file 
     preferences_manager -u=infodba -p=infodba -g=dba -mode=import -scope=SITE -file=awc_startup_prefs.xml -action=merge
 
 This will enable the commandToggle custom command on the global navigation bar of the home page (thumbs up icon)
+![screenshot](/screenshots/commandToggle_pref.png)
 
-    screenshot here
 
 
 
