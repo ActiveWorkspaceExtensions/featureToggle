@@ -20,19 +20,19 @@ After building and publishing the code, the features are disabled by default. Yo
 
 
 #### **commandToggle**
-Make sure *FT_commandToggle_is_feature_enabled* preference value is set to 'true' in featureToggle_prefs.xml file
+* Make sure *FT_commandToggle_is_feature_enabled* preference value is set to 'true' in **featureToggle_prefs.xml** file
 ![screenshot](/screenshots/commandToggle_pref.png)
 
-Import **featureToggle_prefs.xml** file using the following command:
+* Import **featureToggle_prefs.xml** file using the following command:
 
     preferences_manager -u=infodba -p=infodba -g=dba -mode=import -scope=SITE -file=featureToggle_prefs.xml -action=override
 
-Add to *AWC_StartupPreferences* by importing the **awc_startup_prefs.xml** file using the following command:
+* Add to *AWC_StartupPreferences* by importing the **awc_startup_prefs.xml** file using the following command:
 
     preferences_manager -u=infodba -p=infodba -g=dba -mode=import -scope=SITE -file=awc_startup_prefs.xml -action=merge
 
-This will enable the commandToggle custom command on the global navigation bar of the home page (thumbs up icon)
-![screenshot](/screenshots/commandToggle_pref.png)
+* Check to see commandToggle custom command enabled on the global navigation bar of the home page (thumbs up icon)
+![screenshot](/screenshots/commandToggle_enabled.png)
 
 
 
