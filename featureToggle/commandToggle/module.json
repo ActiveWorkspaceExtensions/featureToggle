@@ -1,0 +1,5 @@
+{
+    "name": "commandToggle",
+    "description": "This is the commandToggle module",
+    "skipTest": true
+}

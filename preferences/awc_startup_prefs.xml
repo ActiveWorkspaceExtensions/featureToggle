@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<preferences version="10.0">
+  <category name="Active Workspace">
+    <category_description>No description available for this category.</category_description>
+	<preference name="AWC_StartupPreferences" type="String" array="true" disabled="false" protectionScope="Site" envEnabled="false">
+      <preference_description>Defines the list of preferences to be retrieved at startup by the Active Workspace client from the Teamcenter server.
+Each entry in the list is a valid Teamcenter preference name.</preference_description>
+      <context name="Teamcenter">
+        <value>FT_commandToggle_is_feature_enabled</value>
+      </context>
+    </preference>
+  </category>
+</preferences>

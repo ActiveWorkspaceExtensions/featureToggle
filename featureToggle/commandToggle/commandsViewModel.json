@@ -1,0 +1,48 @@
+{
+    "commands": {
+        "commandToggle": {
+            "iconId": "cmdThumbsUpFilled",
+            "title": "{{i18n.commandToggleTitle}}",
+            "extendedTooltip": {
+                "view": "extendedTooltipDefault"
+            }
+        }
+    },
+    "commandHandlers": {
+        "commandToggleHandler": {
+            "id": "commandToggle",
+            "action": "activatecommandToggle",
+            "activeWhen": true,
+            "visibleWhen": {
+                "condition": "conditions.isFeatureEnabled"
+            }
+        }
+    },
+    "commandPlacements": {
+        "commandToggleaw_globalNavigationbar": {
+            "id": "commandToggle",
+            "uiAnchor": "aw_globalNavigationbar",
+            "priority": 110
+        }
+    },
+    "actions": {
+        "activatecommandToggle": {
+            "actionType": "JSFunction",
+            "method": "alert",
+            "deps": "js/commandToggleService",
+            "inputData": {
+                "text": "commandToggle feature enabled!"
+            }
+        }
+    },
+    "conditions": {
+        "isFeatureEnabled": {
+            "expression": "ctx.preferences.FT_commandToggle_is_feature_enabled[0] === 'true'"
+        }
+    },
+    "i18n": {
+        "commandToggleTitle": [
+            "commandToggleMessages"
+        ]
+    }
+}
