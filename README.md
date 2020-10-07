@@ -12,7 +12,7 @@ Active Workspace 4.3
 
 ## Build
 - Download repo
-- Copy featureToggle folder to `stage/src` directory in your Active Workspace installation root
+- Copy the **src** folder to the `aws2\stage` directory in your Active Workspace installation root
 - Use `awbuild` to build and publish to the file repo.
 
 ## Usage
@@ -21,19 +21,19 @@ After building and publishing the code, the features are disabled by default. Yo
 
 #### **commandToggle**
 * Make sure *FT_commandToggle_is_feature_enabled* preference value is set to 'true' in **featureToggle_prefs.xml** file
-![screenshot](/screenshots/commandToggle_pref.png)
+![screenshot](screenshots/commandToggle_pref.png)
 
 * Import **featureToggle_prefs.xml** file using the following command:
 
-        preferences_manager -u=infodba -p=infodba -g=dba -mode=import -scope=SITE -file=featureToggle_prefs.xml -action=override
+        preferences_manager -u=infodba -p=***** -g=dba -mode=import -scope=SITE -file=featureToggle_prefs.xml -action=override
 
 * Add to *AWC_StartupPreferences* by importing the **awc_startup_prefs.xml** file using the following command:
 
-        preferences_manager -u=infodba -p=infodba -g=dba -mode=import -scope=SITE -file=awc_startup_prefs.xml -action=merge
+        preferences_manager -u=infodba -p=***** -g=dba -mode=import -scope=SITE -file=awc_startup_prefs.xml -action=merge
 
 * Check to see commandToggle custom command enabled on the global navigation bar of the home page (thumbs up icon)
 
-![screenshot](/screenshots/commandToggle_enabled.png)
+![screenshot](screenshots/commandToggle_enabled.png)
 
 
 
